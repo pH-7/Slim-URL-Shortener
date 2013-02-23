@@ -2,7 +2,7 @@
 --
 -- Author:        Pierre-Henry Soria <ph7software@gmail.com>
 -- Copyright:     (c) 2013, Pierre-Henry Soria. All Rights Reserved.
--- Link:          http://github.com/pH-7/PHP-URL Shortener
+-- Link:          http://github.com/pH-7/Slim-URL-Shortener
 -- License:       GNU General Public License <http://www.gnu.org/licenses/gpl.html>
 --
 --
