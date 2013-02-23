@@ -1,0 +1,214 @@
+/**
+ * @author      Pierre-Henry Soria <ph7software@gmail.com>
+ * @copyright   (c) 2012-2013, Pierre-Henry Soria. All Rights Reserved.
+ * @license     CC-BY License - http://creativecommons.org/licenses/by/3.0/
+ */
+
+body {
+  font-family: Arial,Verdana,Helvetica,sans-serif;
+  font-size: 12px;
+  color: #666;
+  background: white url('data:image/jpg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAPAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgBAAEsAwERAAIRAQMRAf/EAE4AAQEBAQAAAAAAAAAAAAAAAAABAggBAQAAAAAAAAAAAAAAAAAAAAAQAQEAAAAAAAAAAAAAAAAAAAAREQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDowAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFgEAgEAgEAgEAgEAgEBICwCAQCAQCAQEgLAIBASAoEAAgEAgEAAgJAUCAkBqAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQGoBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAbgJAIBAICwEgLASAQCAsBIBAWAQEgLASAQCAsBIBAWAQEgEBYCQFgEBIBAICwEgLAagEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEBuAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQG4BAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAbgEBIBAIBAWAkAgEBYCQCAQCAQCAQCAsBIBAIBAIBAWAkBYCQFgEBIBAIBAIBAbgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEBuAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQGoBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAIBAagEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEBqAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQCAQACAQCAQCAQCAQCAQCAQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/9k=') repeat-x;
+  margin-top: 20px;
+}
+
+.center, #container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+header {
+  text-shadow: 0 .9em #ccc,0 0 8px rgba(255,255,255,.6);
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.6em;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+footer {
+  font-size: 11px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding: 1px 10px;
+  clear: both;
+  border-top: 1px dotted #999;
+}
+
+.content {
+  margin-top: 115px;
+}
+
+ul, li{
+  display: block;
+}
+
+nav#top {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+nav#top li {
+  border-radius: 12px;
+  background: #0292C0;
+  width: 115px;
+  height: 25px;
+  float: left;
+  color: #191919;
+  text-align: center;
+  overflow: hidden;
+}
+
+nav#top ul li {
+  margin: 0;
+  padding: 12.5px 20px;
+}
+
+nav#top ul li a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFF;
+  text-shadow: 2px 2px 3px black;
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.hidden{
+  display: none;
+}
+
+/***** Forms *****/
+form {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+label {
+    display: block;
+}
+
+input {
+  width: 284px;
+  margin: 6px;
+  height: 24px;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  border: 2px outset #A6BEDE;
+  width: 190px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  border: 2px outset white;
+  background-color: #CDEB8B;
+}
+
+input[type=submit]:active {
+  border: 2px inset #A6BEDE;
+  background-color: #A6BEDE;
+  color: black;
+}
+
+input, textarea, select {
+  border: 1px solid #ccc;
+  color: #3F3F3F;
+  text-shadow: 0 1px 0 rgba(200, 200, 200, .6);
+  box-shadow: 1px 1px 4px #aaa inset;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 0;
+  border-color: rgba(82,168,236,.8);
+  box-shadow: 1px 1px 4px #aaa inset,0 0 8px rgba(82,168,236,.6);
+}
+
+input,textarea {
+  padding: 7px;
+}
+
+input, textarea, select, fieldset {
+  border-radius: 5px;
+}
+
+button {
+  margin: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 160px;
+  height: 26px;
+}
+
+border:hover,border:active {
+  border-color: 2px solid #000;
+}
+
+input:focus:invalid, input:focus {
+  background-position: 99%;
+  background-repeat: no-repeat;
+}
+
+input:focus:invalid {
+  border-color: #b03535;
+  box-shadow: 0 0 5px #d45252;
+}
+
+input:focus:valid {
+  border-color: #28921f;
+  box-shadow: 0 0 5px #5cd053;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.success {
+  color: #11792D;
+}
+
+.error {
+  color: #F00;
+}
+
+
+/***** Links *****/
+a {
+  color: #08c;
+  outline-style: none;
+  cursor: pointer;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+  text-shadow: 0 0 5px #fff,0 0 8px rgba(255,255,255,.6);
+}

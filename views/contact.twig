@@ -1,0 +1,12 @@
+{% extends "base.twig" %}
+
+{% block title %}{% trans 'Contact Us' %}{% endblock %}
+
+{% block content %}
+    <p>{% trans 'Contact me at:' %} <em id="emailContact"></em></p>
+
+    <script>
+        // Encode in ROT13 to prevent spam robots include the email address
+        document.getElementById("emailContact").innerHTML = '<n uers="znvygb:cu7fbsgjner@tznvy.pbz?fhowrpg=Nobhg HEY Fubegrare - CUC" ery="absbyybj">cu7fbsgjner@tznvy.pbz</n>'.replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
+    </script>
+{% endblock %}

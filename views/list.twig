@@ -1,0 +1,39 @@
+{% extends "base.twig" %}
+
+{% block title %}{% trans 'Shorten URL address' %}{% endblock %}
+{% block meta_description %}{% trans 'Online service to shorten your long URLs' %}{% endblock %}
+{% block meta_keywords %}{% trans 'short URL, URL, bitly, awesome, save, share, shorten' %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans 'The list of recent URLs which have been shortened' %}</h1>
+    
+    {% if flash.error is defined %}
+        <p class="bold error">{{ flash.error }}</p>
+    {% endif %}
+    
+    {% if flash.success is defined %}
+        <p class="bold success">{{ flash.success }}</p>
+    {% endif %}
+    
+    <h3><a href="add">{% trans 'Add new URL to shorten' %}</a></h3>
+
+    {% if total_urls > 0 %} 
+        <p><strong>{% trans 'List of shortened URLs:' %}</strong></p>
+        
+        <p>
+        {% trans %}
+            For the moment, {{ total_urls }} subdued link, fast come to subject yours!
+        {% plural apple_count %}
+             At the moment, already {{ total_urls }} subdued links!
+        {% endtrans %}
+        </p>
+        
+        <ul>
+            {% for short_url in urls %}
+                <li>{{ short_url.createdDate|date('M d, Y') }} &nbsp;-&nbsp; <strong>{{ short_url.link }}</strong> {% trans 'via' %} <strong><a href="{{ url }}/{{ short_url.id }}" rel="nofollow" target="_blank">{{ url }}/{{ short_url.id }}</a></strong> <em>({{ short_url.nb_access }} {% trans 'access' %})</em></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>{% trans 'No link at the moment, please check back later ;-)' %}</p>
+    {% endif %}
+{% endblock %}

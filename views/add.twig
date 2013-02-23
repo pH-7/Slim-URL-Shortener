@@ -1,0 +1,13 @@
+{% extends "base.twig" %}
+
+{% block title %}{% trans 'Add a new link' %}{% endblock %}
+{% block meta_description %}{% trans 'Online service to shorten your long URLs' %}{% endblock %}
+{% block meta_keywords %}{% trans 'short URL, URL, bitly, awesome, save, share, shorten' %}{% endblock %}
+
+{%block content %}
+  <form action="add" method="post">
+	  <p><label for="link">{% trans 'Url to shorten' %}</label><br />
+	  <input type="url" name="link" id="link" placeholder="{% trans 'Paste a link to shorten it' %}" autocomplete="off" required="required" /></p>
+	  <p><button type="submit" name="submit">{% trans 'Shorten URL!' %}</button></p>
+  </form>
+{% endblock %}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="{{ encoding }}" />
+    <title>{% block title %}pH7{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}{% endblock %}" />
+    <meta name="keywords" content="{% block meta_keywords %}{% endblock %}" />
+    <meta name="author" content="Pierre-Henry Soria" />
+    <link rel="stylesheet" href="{{ url }}/styles/{{ style_name }}/css/common.css" />
+</head>
+
+<body>
+
+    <div id="container">
+        <header><h1>pH7</h1></header>
+            <nav id="top">
+                {% block nav %}
+                <ul>
+                    <li><a href="{{ url }}">{% trans 'Home' %}</a></li>
+                    <li><a href="{{ url }}/add">{% trans 'Shorten URL' %}</a></li>
+                    <li><a href="{{ url }}/contact" title="Contact Us">{% trans 'Contact' %}</a></li>
+                </ul>
+                {% endblock %}
+            </nav>
+
+            <section class="content">
+                {% block content %}{% endblock %}
+            </section>
+
+        <footer>
+            <p>{% trans 'By' %} <strong><a href="http://ph-7.github.com">pH7</a></strong> &copy; <span id="copyrightYear"></span>.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Retrieve the current date to the copyright
+        document.getElementById('copyrightYear').innerHTML=(new Date).getFullYear();
+    </script>
+
+</body>
+</html>
