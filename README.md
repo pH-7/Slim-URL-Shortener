@@ -7,7 +7,7 @@ URL Shortening
 This application also includes multilingual support (i18n).
 
 
-## Server Requirements
+### Server Requirements
 
 PHP 5.4.0 or newer.
 
